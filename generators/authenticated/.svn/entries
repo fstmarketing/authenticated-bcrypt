@@ -1,0 +1,55 @@
+8
+
+dir
+2
+https://authenticated-bcrypt.googlecode.com/svn/trunk/generators/authenticated
+https://authenticated-bcrypt.googlecode.com/svn
+
+
+
+2007-12-08T17:36:19.530941Z
+2
+chris@mowforth.com
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+92cad084-c940-0410-ba42-af042dfc8e83
+
+USAGE
+file
+
+
+
+
+2007-12-08T17:24:55.000000Z
+cdb2aed081ecd6e02941a4f298da3e72
+2007-12-08T17:36:19.530941Z
+2
+chris@mowforth.com
+
+authenticated_generator.rb
+file
+
+
+
+
+2007-12-08T17:24:55.000000Z
+1ae4c87613457426f3661e97a7bb9535
+2007-12-08T17:36:19.530941Z
+2
+chris@mowforth.com
+
+templates
+dir
+
