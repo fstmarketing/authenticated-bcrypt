@@ -1,22 +1,21 @@
-acts_as_authenticated generator
-====
+Authenticated-bcrypt
 
-DEPRECATED: Use restful_authentication instead.  Or, ask me for commit rights if you wish to maintain this plugin.
+This plugin is a quick tweak to acts_as_authenticated which uses Coda Hale's BCrypt library instead of the weaker SHA1.
 
-This is a basic authentication generator for rails, very much in the spirit of xal's original Login Generator.
+chris [at] mowforth.com (m0wfo) was the perpetrator of this work.
 
-To use:
+=============================
+TO USE:
+=============================
 
-  ./script/generate authenticated user account
+You need to install bcrypt-ruby before you get started:
 
-This generates a basic user model, a controller, some basic views, and tests.  Extra functionality can be unlocked by
-removing the comments for them.  I have a few examples such as user activation and reversible encrypted passwords.
+sudo gem install bcrypt-ruby
 
-The user migration is also generated unless you pass --skip-migration.
+normally does the trick. Consult http://bcrypt-ruby.rubyforge.org/ for a more concise explanation of why this is a good thing.
 
-Generate your mailer:
 
-  ./script/generate authenticated_mailer user
+Once you've installed the plugin, all the generators are the same as the original techno-weenie plugin, there's just one less column in the user table as the salted password + hash are concatenated into a single field called 'password'.
 
-Consult the Acts As Authenticated wiki for more: http://technoweenie.stikipad.com/plugins/show/Acts+as+Authenticated
+AAA wiki: http://technoweenie.stikipad.com/plugins/show/Acts+as+Authenticated
    
